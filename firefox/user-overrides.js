@@ -1,0 +1,12 @@
+user_pref("places.history.enabled", false);
+user_pref("browser.newtabpage.activity-stream.feeds.topsites", false);
+user_pref("browser.newtabpage.activity-stream.feeds.section.highlights", false);
+user_pref("browser.urlbar.suggest.openpage", false);
+user_pref("browser.urlbar.suggest.topsites", false);
+user_pref("browser.urlbar.suggest.history", false);
+user_pref("browser.tabs.warnOnClose", false);
+user_pref("browser.tabs.closeWindowWithLastTab", false);
+user_pref("privacy.resistFingerprinting.letterboxing", false);
+user_pref("pdfjs.previousHandler.alwaysAskBeforeHandling", true);
+user_pref("signon.rememberSignons", false);
+user_pref("full-screen-api.warning.timeout", 0);
