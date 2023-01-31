@@ -1,0 +1,25 @@
+{
+    "name": "PaperColor",
+    "comment": "Erik Schreier (erik-schreier@gmx.de) Jun 12 2019",
+    "use-theme-colors": false,
+    "foreground-color": "#c6c6c6",
+    "background-color": "#1c1c1c",
+    "palette": [
+        "#3a3a3a",
+        "#d7875f",
+        "#5faf00",
+        "#d7af5f",
+        "#5fafd7",
+        "#af87d7",
+        "#00afaf",
+        "#808080",
+        "#585858",
+        "#d7875f",
+        "#5faf00",
+        "#d7af5f",
+        "#5fafd7",
+        "#af87d7",
+        "#00afaf",
+        "#bcbcbc"
+    ]
+}
