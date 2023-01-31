@@ -26,7 +26,7 @@ unset rc
 ### Installation of BlackBox Color Schemes
 ```
 mkdir -p ~/.var/app/com.raggesilver.BlackBox
-ln -sf ~/.dotfiles/blackbox/data ~/.var/app/com.raggesilver.BlackBox/data
+ln -sf ~/.dotfiles/blackbox/data ~/.var/app/com.raggesilver.BlackBox
 ```
 
 ### Installation of hardened firefox profile:
