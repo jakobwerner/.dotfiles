@@ -9,6 +9,19 @@ Assuming the repository sits at `~/.dotfiles/`:
 mkdir -p ~/.bashrc.d
 ln -sf ~/.dotfiles/bash/config.sh ~/.bashrc.d/config.sh
 ```
+The `.bashrc` file should contain the following lines:
+```
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+	for rc in ~/.bashrc.d/*; do
+		if [ -f "$rc" ]; then
+			. "$rc"
+		fi
+	done
+fi
+
+unset rc
+```
 
 ### Installation of BlackBox Color Schemes
 ```
