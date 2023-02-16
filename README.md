@@ -125,8 +125,8 @@ ln -sf ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-tilix
 
 Install Configuation
 ```
-mkdir -p ~/.var/app/com.raggesilver.BlackBox/config/glib-2.0
-ln -sf ~/.dotfiles/blackbox/keyfile ~/.var/app/com.raggesilver.BlackBox/config/glib-2.0/keyfile
+mkdir -p ~/.var/app/com.raggesilver.BlackBox/config/glib-2.0/settings
+ln -sf ~/.dotfiles/blackbox/keyfile ~/.var/app/com.raggesilver.BlackBox/config/glib-2.0/settings/keyfile
 ```
 
 ## Install GNOME Configuration

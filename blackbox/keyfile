@@ -1,6 +1,9 @@
-theme-light='Rose Piné Dawn'
+[com/raggesilver/BlackBox]
 style-preference=2
-theme-dark='Rosé Pine Dawn'
-font='Fira Code 12'
 show-headerbar=false
-use-custom-command=false
+terminal-padding=(5, 5, 5, 5)
+theme-dark='Rosé Pine'
+theme-light='Rose Piné Dawn'
+font='Fira Code 14'
+use-custom-command=true
+custom-shell-command='distrobox enter my-distrobox -- nnn'
