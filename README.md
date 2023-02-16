@@ -58,21 +58,6 @@ Install Browser Extensions:
 1. uBlock Origin
 2. Bitwarden
 
-## Create distrobox
-Create a Fedora distrobox:
-```
-distrobox create --image fedora:latest --name my-distrobox
-distrobox enter my-distrobox
-```
-Install DNF configuration:
-```
-sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
-```
-Install some basic packages:
-```
-sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh
-```
-
 ## Setup SSH Connection to GitHub
 
 See [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) for more information.
@@ -98,6 +83,21 @@ Go to github.com to add the public key to the profile
 ## Clone Dotfiles Repository
 ```
 git clone git@github.com:jakobwerner/.dotfiles.git
+```
+
+## Create distrobox
+Create a Fedora distrobox:
+```
+distrobox create --image fedora:latest --name my-distrobox
+distrobox enter my-distrobox
+```
+Install DNF configuration:
+```
+sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
+```
+Install some basic packages:
+```
+sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh
 ```
 
 ## Install Bash Configuration
