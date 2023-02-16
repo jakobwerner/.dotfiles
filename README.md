@@ -1,5 +1,7 @@
 # Fedora Silverblue Configuration
 
+These are instructions on how I set up a fresh Fedora Silverblue installation.
+
 ## Add Flathub Repository
 
 ```
