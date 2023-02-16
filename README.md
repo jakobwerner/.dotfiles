@@ -32,12 +32,6 @@ rpm-ostree install distrobox gnome-shell-extension-caffeine gnome-shell-extensio
 ## Reboot
 Reboot to complete installation of layered packages
 
-## Create distrobox
-Create a Fedora distrobox:
-```
-distrobox create --image fedora:latest --name my-distrobox
-```
-
 ## Setup Firefox Profile with Arkenfox Configuration
 Open firefox profile manager:
 ```
@@ -63,6 +57,21 @@ Start firefox with the `hardened` profile and select `Use the selected profile w
 Install Browser Extensions:
 1. uBlock Origin
 2. Bitwarden
+
+## Create distrobox
+Create a Fedora distrobox:
+```
+distrobox create --image fedora:latest --name my-distrobox
+distrobox enter my-distrobox
+```
+Install DNF configuration:
+```
+sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
+```
+Install some basic packages:
+```
+sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh
+```
 
 ## Setup SSH Connection to GitHub
 
@@ -102,11 +111,6 @@ source ~/.bashrc
 ```
 ln -sf ~/.dotfiles/firefox/user-overrides.js ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/user-overrides.js
 sh ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/updater.sh
-```
-
-## Install DNF Configuration
-```
-sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
 ```
 
 ## Install BlackBox Configuration
