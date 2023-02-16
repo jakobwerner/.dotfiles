@@ -97,7 +97,7 @@ sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
 ```
 Install some basic packages:
 ```
-sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh
+sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh git
 ```
 
 ## Install Bash Configuration
