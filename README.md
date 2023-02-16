@@ -21,12 +21,12 @@ flatpak install flathub com.raggesilver.BlackBox org.mozilla.firefox org.gnome.E
 
 ## Uninstall Some Base Packages
 ```
-rpm-ostree override remove firefox-langpacks firefox gnome-terminal-nautilus gnome-terminal
+rpm-ostree override remove firefox-langpacks firefox
 ```
 
 ## Install Some Layered Packages
 ```
-rpm-ostree install distrobox gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-blur-my-shell
+rpm-ostree install distrobox gnome-shell-extension-caffeine gnome-shell-extension-just-perfection gnome-shell-extension-blur-my-shell fira-code-fonts
 ```
 
 ## Reboot
