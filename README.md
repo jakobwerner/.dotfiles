@@ -98,7 +98,7 @@ ln -sf ~/.dotfiles/bash/config.sh ~/.bashrc.d/config.sh
 source ~/.bashrc
 ```
 
-## Intall Firefox Configuration
+## Install Firefox Configuration
 ```
 ln -sf ~/.dotfiles/firefox/user-overrides.js ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/user-overrides.js
 sh ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/updater.sh
