@@ -32,6 +32,12 @@ rpm-ostree install distrobox gnome-shell-extension-caffeine gnome-shell-extensio
 ## Reboot
 Reboot to complete installation of layered packages
 
+## Create distrobox
+Create a Fedora distrobox:
+```
+distrobox create --image fedora:latest --name my-distrobox
+```
+
 ## Setup Firefox Profile with Arkenfox Configuration
 Open firefox profile manager:
 ```
@@ -96,6 +102,11 @@ source ~/.bashrc
 ```
 ln -sf ~/.dotfiles/firefox/user-overrides.js ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/user-overrides.js
 sh ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/updater.sh
+```
+
+## Install DNF Configuration
+```
+sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
 ```
 
 ## Install BlackBox Configuration
