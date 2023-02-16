@@ -6,4 +6,4 @@ theme-dark='Rosé Pine'
 theme-light='Rose Piné Dawn'
 font='Fira Code 14'
 use-custom-command=true
-custom-shell-command='distrobox enter my-distrobox -- "nnn -R"'
+custom-shell-command='distrobox enter distrobox -- "nnn -R"'

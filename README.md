@@ -88,8 +88,8 @@ git clone git@github.com:jakobwerner/.dotfiles.git
 ## Create distrobox
 Create a Fedora distrobox:
 ```
-distrobox create --image fedora:latest --name my-distrobox
-distrobox enter my-distrobox
+distrobox create --image fedora:latest --name distrobox
+distrobox enter distrobox
 ```
 Install DNF configuration:
 ```
