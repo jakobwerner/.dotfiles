@@ -136,6 +136,24 @@ Install GNOME Configruation:
 dconf load / < ~/.dotfiles/gnome/dconf-settings.ini
 ```
 
+## Install Conda
+Install conda:
+```
+sudo dnf install conda
+```
+Install default environment:
+```
+conda create --name default
+```
+Add `conda-forge` channel:
+```
+conda config --add channels conda-forge
+```
+Install `python-lsp-server`:
+```
+conda install python-lsp-server
+```
+
 ## Install Neovim Configuration
 ```
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
