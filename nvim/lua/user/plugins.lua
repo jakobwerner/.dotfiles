@@ -40,6 +40,17 @@ return require('packer').startup(function(use)
         end
     })
 
+    -- cmp plugins
+    use "hrsh7th/nvim-cmp" -- The completion plugin
+    use "hrsh7th/cmp-buffer" -- buffer completions
+    use "hrsh7th/cmp-path" -- path completions
+    use "saadparwaiz1/cmp_luasnip" -- snippet completions
+    use "hrsh7th/cmp-nvim-lsp" 
+    use "hrsh7th/cmp-nvim-lua"
+
+    -- snippets
+    use "L3MON4D3/LuaSnip" --snippet engine
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
