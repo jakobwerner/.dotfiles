@@ -24,12 +24,7 @@ vim.opt.hidden = true
 
 vim.opt.smartcase = true
 
-vim.cmd([[
-augroup auto_comment
-autocmd!
-autocmd FileType * setlocal formatoptions-=cro
-augroup end
-]])
+vim.opt.formatoptions:remove({"c", "r", "o"})
 
 vim.opt.clipboard = "unnamedplus"
 
