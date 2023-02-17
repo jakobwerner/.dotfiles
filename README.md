@@ -135,3 +135,8 @@ Install GNOME Configruation:
 ```
 dconf load / < ~/.dotfiles/gnome/dconf-settings.ini
 ```
+
+## Install Neovim Configuration
+```
+ln -sf ~/.dotfiles/nvim ~/.config/nvim
+```
