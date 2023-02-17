@@ -51,6 +51,9 @@ return require('packer').startup(function(use)
     -- snippets
     use "L3MON4D3/LuaSnip" --snippet engine
 
+    -- lsp
+    use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then
