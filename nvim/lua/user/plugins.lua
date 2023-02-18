@@ -54,6 +54,20 @@ return require('packer').startup(function(use)
     -- lsp
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
 
+    -- treesitter
+    use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
+    use 'mrjones2014/nvim-ts-rainbow'
+
+    -- telescope
+    use {
+        'nvim-telescope/telescope.nvim', tag = '0.1.x',
+        requires = { {'nvim-lua/plenary.nvim'} }
+    }
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
     -- Automatically set up your configuration after cloning packer.nvim
     -- Put this at the end after all plugins
     if packer_bootstrap then

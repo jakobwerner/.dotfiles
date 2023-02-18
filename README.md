@@ -97,7 +97,7 @@ sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
 ```
 Install some basic packages:
 ```
-sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh git
+sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh git fd-find ripgrep tree-sitter-cli nodejs
 ```
 
 ## Install Bash Configuration
