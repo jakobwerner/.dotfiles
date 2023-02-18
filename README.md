@@ -154,6 +154,20 @@ Install `python-lsp-server`:
 conda install python-lsp-server
 ```
 
+## Install lua-language-server
+```
+mkdir -p ~/.local/bin/LuaLS
+```
+Download latest binary from [here](https://github.com/LuaLS/lua-language-server/releases) to `~/.local/share/LuaLS`.
+```
+tar -xf ~/.local/bin/LuaLS/lua-language-server-3.6.11-linux-x64.tar.gz
+```
+Create a wrapper script at `~/.local/bin/lua-language-server` with contents
+```
+#!/bin/bash
+exec "~/.local/bin/LuaLS/bin/lua-language-server" "$@"
+```
+
 ## Install Neovim Configuration
 ```
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
