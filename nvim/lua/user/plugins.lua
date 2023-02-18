@@ -25,8 +25,9 @@ return require('packer').startup(function(use)
     use 'tpope/vim-commentary'
     use 'tpope/vim-fugitive'
     use 'tpope/vim-unimpaired'
-    use 'vim-airline/vim-airline'
-    use 'vim-airline/vim-airline-themes'
+    -- use 'vim-airline/vim-airline'
+    -- use 'vim-airline/vim-airline-themes'
+    use 'strash/everybody-wants-that-line.nvim'
     use 'mbbill/undotree'
     use 'lukas-reineke/indent-blankline.nvim'
     use {
@@ -36,6 +37,8 @@ return require('packer').startup(function(use)
         },
         tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+    -- using packer.nvim
+    use {'akinsho/bufferline.nvim', tag = "v3.*", requires = 'nvim-tree/nvim-web-devicons'}
 
     -- Colorschemes
     use({
@@ -43,9 +46,11 @@ return require('packer').startup(function(use)
         as = 'rose-pine',
         config = function()
             require("rose-pine").setup()
-            vim.cmd('colorscheme rose-pine')
+            -- vim.cmd('colorscheme rose-pine')
         end
     })
+    use 'shaunsingh/seoul256.nvim'
+    use 'tanvirtin/monokai.nvim'
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin

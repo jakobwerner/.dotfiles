@@ -1,2 +1,2 @@
 vim.opt.bg = "dark"
-vim.g.airline_theme = "alduin"
+vim.cmd('colorscheme monokai_pro')
