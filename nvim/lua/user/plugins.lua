@@ -51,6 +51,8 @@ return require('packer').startup(function(use)
     })
     use 'shaunsingh/seoul256.nvim'
     use 'tanvirtin/monokai.nvim'
+    use 'sainnhe/sonokai'
+    use 'Yazeed1s/oh-lucy.nvim'
 
     -- cmp plugins
     use "hrsh7th/nvim-cmp" -- The completion plugin

@@ -1,2 +1,3 @@
-vim.opt.bg = "dark"
-vim.cmd('colorscheme monokai_pro')
+-- vim.opt.bg = "dark"
+vim.opt.termguicolors = true
+vim.cmd('colorscheme oh-lucy-evening')

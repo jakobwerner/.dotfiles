@@ -32,8 +32,6 @@ vim.opt.undofile = true
 
 vim.opt.incsearch = true
 
-vim.opt.colorcolumn = "80"
-
 -- Avoid comments extending to the next line
 -- The following lua way should also work, but it doesn't:
 -- vim.opt.formatoptions:remove({"c", "r", "o"})
