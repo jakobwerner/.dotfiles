@@ -67,6 +67,7 @@ return require('packer').startup(function(use)
 
     -- lsp
     use 'neovim/nvim-lspconfig' -- Configurations for Nvim LSP
+    use 'jose-elias-alvarez/null-ls.nvim'
 
     -- treesitter
     use {

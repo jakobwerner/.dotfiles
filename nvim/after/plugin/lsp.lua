@@ -53,3 +53,9 @@ require('lspconfig')['lua_ls'].setup {
 }
 
 require'lspconfig'.clangd.setup{}
+
+require('lspconfig')['texlab'].setup {
+    on_attach = on_attach,
+    flags = lsp_flags,
+}
+
