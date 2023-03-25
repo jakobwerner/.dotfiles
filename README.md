@@ -2,6 +2,16 @@
 
 These are instructions on how I set up a fresh Fedora Silverblue installation.
 
+## Add kernel parameters
+
+```
+rpm-ostree kargs --editor
+```
+For my hardware, I need the following parameters:
+```
+rw splash i8042 atkbd i8042.noloop i8042.nomux i8042.nopnp i8042.reset
+```
+
 ## Add Flathub Repository
 
 ```
