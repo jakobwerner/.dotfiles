@@ -119,8 +119,9 @@ source ~/.bashrc
 
 ## Install zsh Configuration
 ```
-sudo dnf install zsh zsh-syntax-highlighting zsh-autocomplete
+sudo dnf install zsh zsh-syntax-highlighting zsh-autocomplete util-linux-user
 ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
+chsh -s /bin/zsh
 ```
 
 ## Install Firefox Configuration
