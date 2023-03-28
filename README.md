@@ -9,7 +9,7 @@ rpm-ostree kargs --editor
 ```
 For my hardware, I need the following parameters:
 ```
-rw splash i8042 atkbd i8042.noloop i8042.nomux i8042.nopnp i8042.reset
+rpm-ostree kargs --append-if-missing='splash i8042 atkbd i8042.noloop i8042.nomux i8042.nopnp i8042.reset'
 ```
 
 ## Add Flathub Repository
@@ -26,7 +26,7 @@ flatpak uninstall org.fedoraproject.MediaWriter org.gnome.Connections org.gnome.
 
 ## Install Some Flatpak Applications
 ```
-flatpak install flathub com.raggesilver.BlackBox org.mozilla.firefox org.gnome.Evince org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.mattjakeman.ExtensionManager
+flatpak install flathub org.mozilla.firefox org.gnome.Evince org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.mattjakeman.ExtensionManager
 ```
 
 ## Uninstall Some Base Packages
@@ -107,7 +107,7 @@ sudo ln -sf ~/.dotfiles/dnf/dnf.conf /etc/dnf/dnf.conf
 ```
 Install some basic packages:
 ```
-sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh git fd-find ripgrep tree-sitter-cli nodejs
+sudo dnf install bash-completion nnn trash-cli wl-clipboard neovim openssh git
 ```
 
 ## Install Bash Configuration
@@ -121,22 +121,6 @@ source ~/.bashrc
 ```
 ln -sf ~/.dotfiles/firefox/user-overrides.js ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/user-overrides.js
 sh ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/updater.sh
-```
-
-## Install BlackBox Configuration
-Install Color Schemes:
-```
-mkdir -p ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes
-git clone https://github.com/annappropriate/rose-pine-tilix ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-tilix
-ln -sf ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-tilix/rose-pine.json ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine.json
-ln -sf ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-tilix/rose-pine-moon.json ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-moon.json
-ln -sf ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-tilix/rose-pine-dawn.json ~/.var/app/com.raggesilver.BlackBox/data/blackbox/schemes/rose-pine-dawn.json
-```
-
-Install Configuation
-```
-mkdir -p ~/.var/app/com.raggesilver.BlackBox/config/glib-2.0/settings
-ln -sf ~/.dotfiles/blackbox/keyfile ~/.var/app/com.raggesilver.BlackBox/config/glib-2.0/settings/keyfile
 ```
 
 ## Install GNOME Configuration
@@ -164,21 +148,8 @@ Install `python-lsp-server`:
 conda install python-lsp-server
 ```
 
-## Install lua-language-server
-```
-mkdir -p ~/.local/bin/LuaLS
-```
-Download latest binary from [here](https://github.com/LuaLS/lua-language-server/releases) to `~/.local/share/LuaLS`.
-```
-tar -xf ~/.local/bin/LuaLS/lua-language-server-3.6.11-linux-x64.tar.gz
-```
-Create a wrapper script at `~/.local/bin/lua-language-server` with contents
-```
-#!/bin/bash
-exec "~/.local/bin/LuaLS/bin/lua-language-server" "$@"
-```
-
 ## Install Neovim Configuration
 ```
+sudo dnf install gcc g++ unzip npm fd-find ripgrep tree-sitter-cli
 ln -sf ~/.dotfiles/nvim ~/.config/nvim
 ```
