@@ -117,6 +117,12 @@ ln -sf ~/.dotfiles/bash/config.sh ~/.bashrc.d/config.sh
 source ~/.bashrc
 ```
 
+## Install zsh Configuration
+```
+sudo dnf install zsh zsh-syntax-highlighting zsh-autocomplete
+ln -sf ~/.dotfiles/zsh/zshrc ~/.zshrc
+```
+
 ## Install Firefox Configuration
 ```
 ln -sf ~/.dotfiles/firefox/user-overrides.js ~/.var/app/org.mozilla.firefox/.mozilla/firefox/hardened/user-overrides.js
