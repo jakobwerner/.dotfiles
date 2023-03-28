@@ -1,43 +1,53 @@
-vim.opt.swapfile = false
-vim.opt.hidden = true
+-- Set highlight on search
+vim.o.hlsearch = true
+vim.o.incsearch = true
 
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.numberwidth = 4
-vim.opt.signcolumn = "number"
-
+-- Tabs
 vim.opt.expandtab = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = -1
 vim.opt.smarttab = true
 
-vim.opt.linebreak = true
-vim.opt.breakindent = true
-vim.opt.showbreak = ">>>"
+-- Line Numbers
+vim.wo.number = true
+vim.o.relativenumber = true
+vim.o.signcolumn = 'number'
 
-vim.opt.mouse = "nv"
+-- Enable mouse mode
+vim.o.mouse = 'nv'
 
+-- Sync clipboard between OS and Neovim.
+vim.o.clipboard = 'unnamedplus'
+
+-- Enable break indent
+vim.o.breakindent = true
+vim.o.linebreak = true
+vim.o.showbreak = ">>>"
+
+-- Save undo history
+vim.o.undofile = true
+
+-- Case insensitive searching UNLESS /C or capital in search
+vim.o.ignorecase = true
+vim.o.smartcase = true
+
+-- Decrease update time
+vim.o.updatetime = 250
+vim.o.timeout = true
+vim.o.timeoutlen = 300
+
+-- Set completeopt to have a better completion experience
+vim.o.completeopt = 'menuone,noselect'
+
+-- NOTE: You should make sure your terminal supports this
+vim.o.termguicolors = true
+
+-- Scrolloff
 vim.opt.scrolloff = 5
 
+-- Allows to change buffers when there is unsaved work
 vim.opt.hidden = true
 
-vim.opt.smartcase = true
-
-vim.opt.clipboard = "unnamedplus"
-
+-- Visually mark current line
 vim.opt.cursorline = true
-
-vim.opt.undofile = true
-
-vim.opt.incsearch = true
-
--- Avoid comments extending to the next line
--- The following lua way should also work, but it doesn't:
--- vim.opt.formatoptions:remove({"c", "r", "o"})
-vim.cmd([[
-augroup auto_comment
-autocmd!
-autocmd FileType * setlocal formatoptions-=cro
-augroup end
-]])

@@ -69,7 +69,7 @@ nvim_tree.setup {
     },
 }
 
-vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>")
+vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<cr>")
 
 local function open_nvim_tree(data)
 

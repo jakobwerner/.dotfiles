@@ -9,7 +9,7 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
- - ~/.config/alacritty/themes/oh-lucy/oh-lucy-evening.yml
+ - ~/.config/alacritty/alacritty-theme/themes/gruvbox_dark.yaml
 
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
