@@ -21,12 +21,12 @@ flatpak remote-modify --enable flathub
 
 ## Uninstall Some Flatpak Applications
 ```
-flatpak uninstall org.fedoraproject.MediaWriter org.gnome.Connections org.gnome.eog org.gnome.Evince org.gnome.Extensions org.gnome.font-viewer org.gnome.Logs org.gnome.Weather 
+flatpak uninstall org.fedoraproject.MediaWriter org.gnome.Connections org.gnome.eog org.gnome.Evince org.gnome.Extensions org.gnome.font-viewer org.gnome.Logs org.gnome.Weather org.gnome.Cheese
 ```
 
 ## Install Some Flatpak Applications
 ```
-flatpak install flathub org.mozilla.firefox org.gnome.Evince org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.mattjakeman.ExtensionManager
+flatpak install flathub org.mozilla.firefox org.gnome.Evince org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.mattjakeman.ExtensionManager org.gnome.Evolution org.signal.Signal
 ```
 
 ## Uninstall Some Base Packages
