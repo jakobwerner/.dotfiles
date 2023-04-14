@@ -26,7 +26,7 @@ flatpak uninstall org.fedoraproject.MediaWriter org.gnome.Connections org.gnome.
 
 ## Install Some Flatpak Applications
 ```
-flatpak install flathub org.mozilla.firefox org.gnome.Evince org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.mattjakeman.ExtensionManager org.gnome.Evolution org.signal.Signal
+flatpak install flathub org.mozilla.firefox org.gnome.Evince org.gtk.Gtk3theme.adw-gtk3 org.gtk.Gtk3theme.adw-gtk3-dark com.mattjakeman.ExtensionManager org.gnome.Evolution org.signal.Signal org.gnome.gThumb com.github.rafostar.Clapper
 ```
 
 ## Uninstall Some Base Packages
