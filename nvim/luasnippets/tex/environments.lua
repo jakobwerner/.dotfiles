@@ -38,6 +38,22 @@ return {
         )
     ),
 
+    s("eq*",
+        fmta(
+            [[
+                \begin{equation}
+                    <>
+                    \label{eq:<>}
+                \end{equation}
+
+            ]],
+            {
+                i(1),
+                i(2),
+            }
+        )
+    ),
+
     s("j",
         fmta(
             [[
