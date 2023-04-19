@@ -25,6 +25,21 @@ return {
         )
     ),
 
+    s("par",
+        fmta(
+            [[
+                \begin{para}[<>] \label{par:<>}
+                    <>
+                \end{para}
+            ]],
+            {
+                i(1),
+                i(2),
+                i(3)
+            }
+        )
+    ),
+
     s("eq",
         fmta(
             [[
