@@ -40,6 +40,20 @@ return {
         )
     ),
 
+    s("lem",
+        fmta(
+            [[
+                \begin{lemma} \label{lem:<>}
+                    <>
+                \end{lemma}
+            ]],
+            {
+                i(1),
+                i(2),
+            }
+        )
+    ),
+
     s("eq",
         fmta(
             [[
