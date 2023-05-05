@@ -54,6 +54,20 @@ return {
         )
     ),
 
+    s("prop",
+        fmta(
+            [[
+                \begin{proposition} \label{prop:<>}
+                    <>
+                \end{proposition}
+            ]],
+            {
+                i(1),
+                i(2),
+            }
+        )
+    ),
+
     s("eq",
         fmta(
             [[
