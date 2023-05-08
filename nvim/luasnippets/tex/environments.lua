@@ -54,6 +54,19 @@ return {
         )
     ),
 
+    s("pf",
+        fmta(
+            [[
+                \begin{proof}
+                    <>
+                \end{proof}
+            ]],
+            {
+                i(1),
+            }
+        )
+    ),
+
     s("eq",
         fmta(
             [[
