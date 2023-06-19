@@ -54,6 +54,20 @@ return {
         )
     ),
 
+    s("thm",
+        fmta(
+            [[
+                \begin{theorem} \label{thm:<>}
+                    <>
+                \end{theorem}
+            ]],
+            {
+                i(1),
+                i(2),
+            }
+        )
+    ),
+
     s("pf",
         fmta(
             [[
@@ -106,6 +120,44 @@ return {
             {
                 i(1),
                 i(2),
+            }
+        )
+    ),
+
+    s("comp",
+        fmta(
+            [[
+                \begin{equation*}
+                    \begin{tikzcd}[column sep=small]
+                        <> \arrow[r, "{<>}"] & <> \arrow[r, "{<>}"] & <>
+                    \end{tikzcd}
+                \end{equation*}
+            ]],
+            {
+                i(1),
+                i(2),
+                i(3),
+                i(4),
+                i(5),
+            }
+        )
+    ),
+
+    s("ses",
+        fmta(
+            [[
+                \begin{equation*}
+                    \begin{tikzcd}[column sep=small]
+                        0 \arrow[r] & <> \arrow[r, hookrightarrow, "{<>}"] & <> \arrow[r, twoheadrightarrow, "{<>}"] & <> \arrow[r] & 0
+                    \end{tikzcd}
+                \end{equation*}
+            ]],
+            {
+                i(1),
+                i(2),
+                i(3),
+                i(4),
+                i(5),
             }
         )
     ),
