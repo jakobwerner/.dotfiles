@@ -13,8 +13,8 @@ compinit
 # End of lines added by compinstall
 
 # Environment Variables
-export EDITOR=nvim
-export VISUAL=nvim
+export EDITOR=helix
+export VISUAL=helix
 
 # Aliases
 alias ls="ls -A --group-directories-first -h -l -1 --color=auto"
@@ -25,8 +25,8 @@ export NNN_TRASH=1
 alias nnn="nnn -R"
 
 # Plugins
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Prompt
 autoload -Uz vcs_info
@@ -40,3 +40,19 @@ precmd() {
 }
 setopt prompt_subst
 PS1='%F{yellow}%3~ ${vcs_info_msg_0_}%f%# '
+
+lfcd () {
+    tmp="$(mktemp)"
+    # `command` is needed in case `lfcd` is aliased to `lf`
+    command lf -last-dir-path="$tmp" "$@"
+    if [ -f "$tmp" ]; then
+        dir="$(cat "$tmp")"
+        rm -f "$tmp"
+        if [ -d "$dir" ]; then
+            if [ "$dir" != "$(pwd)" ]; then
+                cd "$dir"
+            fi
+        fi
+    fi
+}
+alias lf="lfcd"
