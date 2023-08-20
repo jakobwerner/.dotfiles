@@ -1,1 +1,34 @@
 theme = "rose_pine_dawn"
+
+[editor]
+scrolloff = 5
+line-number = "relative"
+cursorline = true
+bufferline = "multiple"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+center = ["version-control"]
+right = ["diagnostics", "selections", "position", "position-percentage", "file-encoding"]
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.indent-guides]
+render = true
+character = "┆"
+skip-levels = 1
+
+[editor.soft-wrap]
+enable = true
+wrap-indicator = "   ↪"
+
+[keys.normal]
+"ret" = "add_newline_below"
+"backspace" = "add_newline_above"

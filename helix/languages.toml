@@ -1,42 +1,24 @@
 [[language]]
 name = "latex"
 
-[language.config.texlab]
-auxDirectory = "build"
-
-[language.config.texlab.chktex]
-onOpenAndSave = true
-onEdit = true
+[language.config.texlab.build]
+onSave = true
+forwardSearchAfter = true
+executable = "latexmk"
+args = [
+  "-pdf",
+  "-interaction=nonstopmode",
+  "-synctex=1",
+  # "-c",
+  "-lualatex",
+ # "-shell-escape",
+ # "-output-directory=build",
+ "%f"
+ ]
 
 [language.config.texlab.forwardSearch]
 executable = "zathura"
-args = [ "--synctex-forward", "%l:%c:%f", "%p" ]
+args = [ "--synctex-forward", "%l:1:%f", "%p" ]
 
-# executable = "okular"
-# args = ["--unique", "file:%p#src:%l%f"]
-
-[language.config.texlab.build]
-forwardSearchAfter = true
-onSave = true
-
-executable = "latexmk"
-# args = [
-#  "-pdf",
-#  "-interaction=nonstopmode",
-#  "-synctex=1",
-#  "-shell-escape",
-#  "-output-directory=build",
-#  "%f"
-#  ]
-
-# executable = "tectonic"
-# args = [
- # "-X",
- # "compile",
- # "%f",
- # "--synctex",
- # "--keep-logs",
- # "--keep-intermediates",
- # "--outdir=build",
- # "-Zshell-escape",
- # ]
+[language.config.texlab.chktex]
+onEdit = true
