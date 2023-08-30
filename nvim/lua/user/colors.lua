@@ -1,4 +1,4 @@
-vim.cmd.colorscheme 'gruvbox'
+vim.cmd.colorscheme 'rose-pine-dawn'
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
