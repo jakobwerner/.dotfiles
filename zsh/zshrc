@@ -13,8 +13,8 @@ compinit
 # End of lines added by compinstall
 
 # Environment Variables
-export EDITOR=helix
-export VISUAL=helix
+export EDITOR=nvim
+export VISUAL=nvim
 
 # Aliases
 alias ls="ls -A --group-directories-first -h -l -1 --color=auto"
